@@ -1,4 +1,5 @@
 /* globals $ */
+
 var book1 = {
     "id": 1,
     "name": "The Lion, The Witch, and the Wardrobe",
@@ -51,6 +52,8 @@ var book4 = {
     ]
 };
 
+var books = { book1, book2, book3, book4, book5, };
+
 var generateItem = function generateItem( product ){
     $( "#book" + product.id + " h1" ).text( product.name );
     $( "#book" + product.id + " h2" ).text( product.author );
@@ -64,3 +67,5 @@ generateItem( book1 );
 generateItem( book2 );
 generateItem( book3 );
 generateItem( book4 );
+generateItem( book5 ); {
+}
